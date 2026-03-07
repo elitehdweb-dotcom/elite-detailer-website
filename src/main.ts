@@ -203,6 +203,34 @@ const initMagneticButtons = () => {
 };
 
 
+// 6. Smooth Scroll for Anchor Links
+const initSmoothAnchorLinks = () => {
+    document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+        anchor.addEventListener('click', (e) => {
+            const href = (anchor as HTMLAnchorElement).getAttribute('href');
+            if (!href || href === '#') return;
+
+            const target = document.querySelector(href);
+            if (!target) return;
+
+            e.preventDefault();
+
+            // Smooth scroll using Lenis
+            lenis.scrollTo(target as HTMLElement, {
+                offset: 0,
+                duration: 1.2,
+                easing: (t: number) => Math.min(1, 1.001 - Math.pow(2, -10 * t)), // easeOutExpo
+            });
+
+            // Close mobile menu if open
+            const navLinks = document.querySelector('.nav-links');
+            if (navLinks?.classList.contains('active')) {
+                navLinks.classList.remove('active');
+            }
+        });
+    });
+};
+
 // Run all initializations when DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     initHeroAnimation();
@@ -210,4 +238,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initScrollAnimations();
     initHorizontalScroll();
     initMagneticButtons();
+    initSmoothAnchorLinks();
 });
