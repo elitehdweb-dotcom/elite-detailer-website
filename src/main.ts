@@ -1,4 +1,4 @@
-import { createIcons, ChevronRight, Menu, MessageCircle, PlayCircle, Sparkles, Microscope, Shield, Check, Award, MapPin, Phone, Mail, Instagram, Facebook, Youtube } from 'lucide';
+import { createIcons, ChevronRight, Menu, MessageCircle, PlayCircle, Sparkles, Microscope, Shield, Check, Award, MapPin, Phone, Mail, Instagram, Facebook, Youtube, Quote, Star } from 'lucide';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import Lenis from 'lenis';
@@ -22,7 +22,9 @@ createIcons({
         Mail,
         Instagram,
         Facebook,
-        Youtube
+        Youtube,
+        Quote,
+        Star
     }
 });
 
