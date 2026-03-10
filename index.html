@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Elite Detailer | Uncompromising Automotive Perfection</title>
+  <!-- Pre-connect for fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <!-- Syne for headings, Inter for body - premium aesthetic -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Syne:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="/src/style.css">
+</head>
+
+<body>
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/1234567890" class="whatsapp-float group" target="_blank" rel="noopener noreferrer"
+    aria-label="Chat on WhatsApp">
+    <!-- We will inject the icon via Lucide in main.ts -->
+    <i data-lucide="message-circle" class="wa-icon group-hover:scale-110 transition-transform"></i>
+    <span class="wa-tooltip">How can I help you?</span>
+  </a>
+
+  <!-- Navigation -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand">ELITE<span>.</span></a>
+
+      <div class="nav-links">
+        <a href="#hero" class="nav-link">Home</a>
+        <a href="#about" class="nav-link">About</a>
+        <a href="#services" class="nav-link">Services</a>
+        <a href="#gallery" class="nav-link">Gallery</a>
+        <a href="#testimonials" class="nav-link">Testimonials</a>
+        <a href="#contact" class="nav-link">Contact</a>
+        <a href="tel:+1234567890" class="nav-tel">+1 (234) 567-890</a>
+        <a href="#contact" class="btn btn-primary nav-cta">Book Now</a>
+      </div>
+
+      <button class="mobile-menu-btn" aria-label="Toggle menu">
+        <i data-lucide="menu"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main id="smooth-wrapper">
+    <div id="smooth-content">
+      <!-- Hero Section -->
+      <section id="hero" class="hero">
+        <div class="hero-bg"></div>
+        <div class="hero-overlay"></div>
+
+        <div class="hero-content">
+          <h1 class="hero-title">
+            <span class="hero-title-line">Preserving</span>
+            <span class="hero-title-line">Automotive</span>
+            <span class="hero-title-line highlight">Perfection.</span>
+          </h1>
+          <p class="hero-subtitle">The ultimate destination for uncompromising ceramic coating, paint correction, and
+            bespoke detailing services.</p>
+
+          <div class="hero-cta-group">
+            <a href="#services" class="btn btn-primary btn-lg magnetic">Explore Services</a>
+            <a href="#process" class="btn btn-outline btn-lg magnetic gap-2">
+              <i data-lucide="play-circle"></i> Watch our Process
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-scroll-indicator">
+          <span class="scroll-text">Scroll to explore</span>
+          <div class="scroll-line"></div>
+        </div>
+      </section>
+
+      <!-- About Us -->
+      <section id="about" class="section about-section">
+        <div class="container auto-grid">
+          <div class="about-content">
+            <span class="section-label">Our Story</span>
+            <h2 class="section-title">Driven by an Obsession for Detail.</h2>
+            <p class="section-text">Founded on the principle that true luxury lies in the details, Elite Detailer has
+              established itself as the premier atelier for automotive care. We don't just wash cars; we perform
+              meticulous paint surgery.</p>
+            <p class="section-text">Utilizing state-of-the-art technology, aerospace-grade ceramics, and decades of
+              combined expertise, we transform, protect, and elevate the world's finest vehicles.</p>
+
+            <div class="stats-grid mt-12">
+              <div class="stat-item">
+                <span class="stat-value">10+</span>
+                <span class="stat-label">Years Experience</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">5k+</span>
+                <span class="stat-label">Vehicles Coated</span>
+              </div>
+              <div class="stat-item">
+                <span class="stat-value">100%</span>
+                <span class="stat-label">Satisfaction</span>
+              </div>
+            </div>
+          </div>
+          <div class="about-image-wrapper">
+            <div class="about-image image-reveal" style="background-image: url('/src/assets/about-bg.jpg')"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section id="services" class="section services-section bg-darker">
+        <div class="container">
+          <div class="section-header text-center">
+            <span class="section-label">What we offer</span>
+            <h2 class="section-title">Bespoke Detailing Services.</h2>
+          </div>
+
+          <div class="services-grid mt-16">
+            <!-- Service Card 1 -->
+            <div class="service-card">
+              <div class="service-icon"><i data-lucide="sparkles"></i></div>
+              <h3 class="service-title">Ceramic Coating</h3>
+              <p class="service-desc">Multi-year protection offering extreme gloss, hydrophobicity, and resistance to
+                environmental fallout. Aerospace-grade formulas.</p>
+              <ul class="service-features">
+                <li><i data-lucide="check"></i> 9H Hardness Protection</li>
+                <li><i data-lucide="check"></i> Extreme UV Resistance</li>
+                <li><i data-lucide="check"></i> Self-Cleaning Properties</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline btn-sm mt-8">Book Service</a>
+            </div>
+
+            <!-- Service Card 2 -->
+            <div class="service-card featured">
+              <div class="service-icon"><i data-lucide="microscope"></i></div>
+              <h3 class="service-title">Paint Correction</h3>
+              <p class="service-desc">Multi-stage machine compounding and polishing to permanently remove swirl marks,
+                scratches, and oxidation.</p>
+              <ul class="service-features">
+                <li><i data-lucide="check"></i> Removes 90-95% of Defects</li>
+                <li><i data-lucide="check"></i> Restores Mirror Finish</li>
+                <li><i data-lucide="check"></i> Essential Prep for Ceramic</li>
+              </ul>
+              <a href="#contact" class="btn btn-primary btn-sm mt-8">Book Service</a>
+            </div>
+
+            <!-- Service Card 3 -->
+            <div class="service-card">
+              <div class="service-icon"><i data-lucide="shield"></i></div>
+              <h3 class="service-title">PPF Installation</h3>
+              <p class="service-desc">Paint Protection Film is the ultimate invisible armor against rock chips, road
+                debris, and physical damage.</p>
+              <ul class="service-features">
+                <li><i data-lucide="check"></i> Self-Healing Technology</li>
+                <li><i data-lucide="check"></i> 10-Year Warranty</li>
+                <li><i data-lucide="check"></i> Custom Computer Cut</li>
+              </ul>
+              <a href="#contact" class="btn btn-outline btn-sm mt-8">Book Service</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Gallery -->
+      <section id="gallery" class="section gallery-section">
+        <div class="container">
+          <div class="section-header">
+            <span class="section-label">Our Work</span>
+            <h2 class="section-title">The Masterpieces.</h2>
+          </div>
+        </div>
+
+        <!-- Horizontal Scroll Section -->
+        <div class="gallery-wrapper mt-12">
+          <div class="gallery-track">
+            <div class="gallery-item"><img src="/src/assets/gallery-1.jpg" alt="Gallery 1" class="gallery-img"></div>
+            <div class="gallery-item"><img src="/src/assets/gallery-2.jpg" alt="Gallery 2" class="gallery-img"></div>
+            <div class="gallery-item"><img src="/src/assets/gallery-3.jpg" alt="Gallery 3" class="gallery-img"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Achievements & Special Offers-->
+      <section id="offers" class="section cta-split-section">
+        <div class="container split-grid">
+          <div class="achievements-box">
+            <div class="icon-wrapper mb-6"><i data-lucide="award" size="40"></i></div>
+            <h3 class="text-3xl font-heading mb-4">Award-Winning Studio</h3>
+            <p class="text-muted">Certified master installers for the world's most exclusive automotive protection
+              brands. Your investment is in the hands of recognized experts.</p>
+          </div>
+
+          <div class="offers-box bg-accent text-dark p-12 relative overflow-hidden">
+            <div class="absolute inset-0 bg-noise opacity-10"></div>
+            <span class="badge mb-6">Special Offer</span>
+            <h3 class="text-4xl font-heading font-bold mb-4">Complete Protection Package</h3>
+            <p class="text-lg mb-8 max-w-md">Book a Level 2 Paint Correction and receive an upgraded 5-Year Ceramic
+              Coating at no additional cost.</p>
+            <a href="#contact" class="btn btn-dark">Claim Offer</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <div class="container auto-grid">
+          <div class="contact-info">
+            <span class="section-label">Book Appointment Now</span>
+            <h2 class="section-title">Elevate Your Vehicle.</h2>
+            <p class="section-text mb-12">Schedule your consultation today. We take limited bookings per month to ensure
+              absolute perfection for every client.</p>
+
+            <div class="contact-methods">
+              <div class="contact-method">
+                <div class="cm-icon"><i data-lucide="map-pin"></i></div>
+                <div>
+                  <h4 class="cm-title">Studio Location</h4>
+                  <p class="cm-text">123 Detailer Ave, Auto District, CA 90210</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="cm-icon"><i data-lucide="phone"></i></div>
+                <div>
+                  <h4 class="cm-title">Direct Line</h4>
+                  <p class="cm-text">+1 (234) 567-890</p>
+                </div>
+              </div>
+
+              <div class="contact-method">
+                <div class="cm-icon"><i data-lucide="mail"></i></div>
+                <div>
+                  <h4 class="cm-title">Email Us</h4>
+                  <p class="cm-text">booking@elitedetailer.com</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-wrapper">
+            <form class="contact-form">
+              <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="John Doe" required>
+              </div>
+              <div class="form-group">
+                <label for="vehicle">Vehicle Make & Model</label>
+                <input type="text" id="vehicle" placeholder="e.g. Porsche 911 GT3" required>
+              </div>
+              <div class="form-group">
+                <label for="service">Service of Interest</label>
+                <select id="service" required>
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="ceramic">Ceramic Coating</option>
+                  <option value="correction">Paint Correction</option>
+                  <option value="ppf">PPF Installation</option>
+                  <option value="other">Other / Not Sure</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="message">Additional Details</label>
+                <textarea id="message" rows="4"
+                  placeholder="Tell us about the current condition of your vehicle..."></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary w-full mt-4">Submit Request</button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer class="footer">
+        <div class="container footer-grid">
+          <div class="footer-brand">
+            <a href="#" class="brand text-white">ELITE<span>.</span></a>
+            <p class="footer-desc mt-6">The ultimate destination for uncompromising ceramic coating and bespoke
+              detailing services.</p>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Navigation</h4>
+            <ul>
+              <li><a href="#hero">Home</a></li>
+              <li><a href="#about">About</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4 class="footer-heading">Services</h4>
+            <ul>
+              <li><a href="#services">Ceramic Coating</a></li>
+              <li><a href="#services">Paint Correction</a></li>
+              <li><a href="#services">PPF Installation</a></li>
+              <li><a href="#services">Interior Restoration</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h4 class="footer-heading">Follow Us</h4>
+            <div class="social-icons">
+              <a href="#" aria-label="Instagram"><i data-lucide="instagram"></i></a>
+              <a href="#" aria-label="Facebook"><i data-lucide="facebook"></i></a>
+              <a href="#" aria-label="YouTube"><i data-lucide="youtube"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="footer-bottom container border-t border-white/10 pt-8 mt-16 flex justify-between items-center text-sm text-gray-400">
+          <p>&copy; 2026 Elite Detailer. All rights reserved.</p>
+          <p>Designed for Perfection.</p>
+        </div>
+      </footer>
+    </div>
+  </main>
+  <script type="module" src="/src/main.ts"></script>
+</body>
+
+</html>
