@@ -211,3 +211,5 @@ document.addEventListener('DOMContentLoaded', () => {
     initHorizontalScroll();
     initMagneticButtons();
 });
+
+
